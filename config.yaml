@@ -1,0 +1,9 @@
+listen_port: 5080
+db:
+  driver: "postgre"
+  dsn: "root:123456@tcp(127.0.0.1:3306)/test?charset=utf8mb4&loc=Asia%2FShanghai&parseTime=true"
+  max_open_conn: 10
+  max_idle_conn: 20
+  conn_max_lifetime: 60
+  log_level: 4
+

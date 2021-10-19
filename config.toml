@@ -1,0 +1,26 @@
+ListenPort = 5080
+[DB]
+    Driver="mysql"
+    Dsn="root:123456@tcp(127.0.0.1:3306)/test?charset=utf8mb4&loc=Asia%2FShanghai&parseTime=true"
+    MaxOpenConn = 1
+    MaxIdleConn = 2
+    #单位秒
+    ConnMaxLifetime = 60
+    #sql日志级别 Silent 1 error 2 warn 3 info 4
+    LogLevel = 4
+[LogConfig]
+    LogBase = "logs/"
+    LogToStdout = true
+    #panic 0 fatal 1 error 2 warn 3 info 4 debug 5
+    LogLevel = 5
+    #256MB.....................
+    RollSize = 268435456
+[Redis]
+    Network     = "tcp"
+    Addr        = "127.0.0.1:6379"
+    #Password    = ""
+    DB          = 0
+    DialTimeout = 5
+    ReadTimeout = 5
+    WriteTimeout = 5
+    PoolSize = 10
