@@ -2,7 +2,7 @@ package db
 
 import (
 	"errors"
-	"go-fast/config"
+	"go-fast/pkg/config"
 	"gorm.io/driver/mysql"
 	"gorm.io/driver/postgres"
 	"gorm.io/driver/sqlite"

@@ -1,7 +1,10 @@
 listen_port: 5080
 db:
   driver: "postgre"
+  # mysql
   dsn: "root:123456@tcp(127.0.0.1:3306)/test?charset=utf8mb4&loc=Asia%2FShanghai&parseTime=true"
+  # postgre
+  #host=127.0.0.1 port=5432 user=postgres dbname=postgres password=root sslmode=disable TimeZone=Asia/Shanghai
   max_open_conn: 10
   max_idle_conn: 20
   conn_max_lifetime: 60

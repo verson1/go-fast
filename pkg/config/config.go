@@ -47,10 +47,11 @@ type LogConfig struct {
 	LogLevel    int
 	Debug       bool
 	LogToStdout bool
-	RollSize    int
+	RollSize    int64
 }
 
 type Config struct {
+	GinMode    string       `yaml:"gin_mode"`
 	ListenPort string       `yaml:"listen_port"`
 	DB         *DBConfig    `yaml:"db"`
 	Redis      *RedisConfig `yaml:"redis"`
